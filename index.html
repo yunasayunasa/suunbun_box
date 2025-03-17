@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝箱を開けよう</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="treasure-box" class="treasure-box"></div>
+        <div class="input-container">
+            <input type="text" id="password-input" placeholder="合言葉">
+            <button onclick="checkPassword()">開ける</button>
+            <p id="message">合言葉を入れよ</p>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <p>宝箱が開いた！謎解明おめでとう！</p>
+            <img src="root/syunbun.jpg" alt="宝物">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
